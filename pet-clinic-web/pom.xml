@@ -17,6 +17,7 @@
     </properties>
 
     <dependencies>
+        <!-- first dependence want to be data module -->
         <dependency>
             <artifactId>pet-clinic-data</artifactId>
             <groupId>roman.skrypnyk</groupId>
