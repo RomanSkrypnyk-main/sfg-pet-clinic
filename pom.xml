@@ -31,29 +31,26 @@
         <project.report.outputEncoding>UTF-8</project.report.outputEncoding>
         <java.version>11</java.version>
     </properties>
-    <dependencies>
-
-
-
-
-
-    </dependencies>
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
                 <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
+                    <goal>install</goal>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
+    <scm>
+        <developerConnection>scm:git:https://github.com/RomanSkrypnyk-main/sfg-pet-clinic.git</developerConnection>
+    </scm>
 
 </project>
